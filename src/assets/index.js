@@ -1,3 +1,4 @@
+import mainsection from "./mainsection.png"
 import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
@@ -29,8 +30,16 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import indocument from "./indocument.png";
+import kundli from "./kundli.png";
+import ltclinic from "./ltclinic.png";
+import dailyhoroscope from "./dailyhoroscope.png";
+import walk from "./walk.png";
+
+
 
 export {
+  mainsection,
   logo,
   backend,
   creator,
@@ -59,4 +68,9 @@ export {
   carrent,
   jobit,
   tripguide,
+  indocument,
+  kundli,
+  ltclinic,
+  dailyhoroscope,
+  walk
 };

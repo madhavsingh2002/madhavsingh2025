@@ -23,6 +23,11 @@ import {
   jobit,
   tripguide,
   threejs,
+  indocument,
+  kundli,
+  ltclinic,
+  dailyhoroscope,
+  walk
 } from "../assets";
 
 export const navLinks = [
@@ -39,26 +44,59 @@ export const navLinks = [
     title: "Contact",
   },
 ];
-
+//Languages: , ,  ‬
+//          ‭ Frameworks/Libraries: , , , ,‬
+//          ‭ , , Flutter ‬
+//          ‭ , , Flutter ‬
+//          ‭ Architecture: , , OOP, Functional‬
+//          ‭ Programming‬
+//          ‭ Tools: ,  Actions, ,
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Native Developer",
+    title: "Kotlin",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Java",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Dart",
     icon: creator,
   },
+  {
+      title: "Flutter",
+      icon: backend,
+  },
+  {
+    title: "Android SDK",
+    icon: web,
+  },
+  {
+    title: "Jetpack",
+    icon: web,
+  },
+  {
+    title: "RxJava",
+    icon: mobile,
+  },
+  {
+    title: "Firebase",
+    icon: backend,
+  },
+  {
+    title: "MVVM, Clean Architecture",
+    icon: creator,
+  },
+  {
+    title: "Git, GitHub",
+    icon: backend,
+  },
+  {
+    title: "ADB, Proguard",
+    icon: backend,
+  },
 ];
-
 const technologies = [
   {
     name: "HTML 5",
@@ -116,59 +154,51 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "SDE -> SDE-II",
+    company_name: "Lifespark Technologies Pvt. Ltd.",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Sept 2024- Present, IIT Bombay",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Led development of LT-Physio, a clinic app from scratch, enabling over 100+ physiotherapy sessions with interactive rehab games, BLE-based medical device integration, and automated report generation.",
+      "Built WALK and WALK_MINI, mobility and exercise tracking apps that improved patient engagement by 35%, using Kable (BLE) for real-time feedback from proprietary devices.",
+      "Created PDI, an internal QA app that reduced device testing time by 40% through automated test flows and Bluetooth firmware validation.",
+      "Designed responsive UIs with Jetpack Compose, improving user satisfaction and reducing UI bugs by 25% in clinical testing.",
+      "Utilized Firebase for secure real-time data storage, user tracking, and analytics; integrated Ktor Client for 30% faster API response handling."
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Jr. Software Engineer",
+    company_name: "Spraxa Solutions Pvt Ltd",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Oct 2023 - Aug 2024, Noida",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed the Kundli astrology app, reaching over 100K downloads, with features like matchmaking, daily horoscopes, and DOB-based birth charts.",
+      "Built core modules for Kundli analysis, compatibility scoring, and planetary predictions that increased user retention by 20%.",
+      "Implemented Jetpack Compose for modern UI, improving rendering performance by 30% and user satisfaction ratings on the Play Store.",
+      "Integrated Ktor Client for reliable and efficient backend communication, reducing API call failures by 40%.",
+      "Used Firebase for real-time syncing, authentication, and push notifications, increasing daily active users by 15%.",
     ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  }
 ];
 
+const educations = [
+  {
+    title: "B.Tech-CSE",
+    company_name: "GGSIPU",
+    icon: starbucks,
+    iconBg: "#383E56",
+    date: "• Delhi • 2023 • 9.0",
+  },
+  {
+      title: "Diploma",
+      company_name: "Pusa",
+      icon: starbucks,
+      iconBg: "#383E56",
+      date: "• Delhi • 2020 • 7.5",
+    },
+];
 const testimonials = [
   {
     testimonial:
@@ -198,68 +228,109 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "LT-Clinic",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A clinic-focused physiotherapy app designed for doctors and therapists with features such as Bluetooth-enabled medical device connectivity, interactive rehab games, test modules, and automatic report generation.",
     tags: [
       {
-        name: "react",
+        name: "Kotlin",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Jetpack, Material3",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Firebase",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: ltclinic,
+    source_code_link: "https://play.google.com/store/apps/details?id=com.lifesparktech.clinic&hl=en",
   },
   {
-    name: "Job IT",
+    name: "WALK",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Mobility tracking and exercise guidance apps designed to work with custom medical devices, providing real-time feedback, session tracking, and goal monitoring.",
     tags: [
       {
-        name: "react",
+        name: "Flutter",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Firebase",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Dart",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: walk,
+    source_code_link: "https://play.google.com/store/apps/details?id=com.lifesparktech.walk&hl=en",
   },
   {
-    name: "Trip Guide",
+    name: "Kundli",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "An astrology app offering detailed matchmaking, birth charts, and personalized horoscopes based on user DOB and location.",
     tags: [
       {
-        name: "nextjs",
+        name: "Flutter",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Firebase",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Dart",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: kundli,
+    source_code_link: "https://play.google.com/store/apps/details?id=com.durlabh.kundli&hl=en",
   },
+  {
+      name: "Dailyhoroscope",
+      description:
+        "A lightweight app delivering daily horoscopes to users, focused on minimal design and fast content delivery.",
+      tags: [
+        {
+          name: "Kotlin",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Firebase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Material 3",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: dailyhoroscope,
+      source_code_link: "https://play.google.com/store/apps/details?id=com.mkl.dailyhoroscope&hl=en",
+    },
+    {
+       name: "Indocument",
+       description: "Utility app to convert images into PNG, JPG, JPEG, and PDF formats, supporting image optimization and multi-file export.",
+          tags: [
+            {
+              name: "Kotlin",
+              color: "blue-text-gradient",
+            },
+            {
+              name: "Jetpack",
+              color: "green-text-gradient",
+            },
+            {
+              name: "Material 3",
+              color: "pink-text-gradient",
+            },
+          ],
+          image: indocument,
+          source_code_link: "https://play.google.com/store/apps/details?id=com.mkl.onehemlk&hl=en",
+       },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, educations, testimonials, projects };

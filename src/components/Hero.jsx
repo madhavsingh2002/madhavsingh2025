@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
-
+import { mainsection } from "../assets";
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
@@ -16,16 +16,21 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Adrian</span>
+            Hi, I'm <span className='text-[#915EFF]'>Madhav Singh</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
+            Software Developer
           </p>
+        </div>
+        <div>
+{/*             <img */}
+{/*                src={mainsection} */}
+{/*                alt='project_image' */}
+{/*             /> */}
         </div>
       </div>
 
-      <ComputersCanvas />
+{/*       <ComputersCanvas /> */}
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
