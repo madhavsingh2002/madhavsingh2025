@@ -70,4 +70,4 @@ const Education = () => {
   );
 };
 
-export default SectionWrapper(Education, "work");
+export default SectionWrapper(Education, "education");

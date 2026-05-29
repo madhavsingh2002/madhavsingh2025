@@ -1,4 +1,4 @@
-import mainsection from "./mainsection.png"
+import mainsection from "./mainsection.png";
 import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
@@ -35,8 +35,7 @@ import kundli from "./kundli.png";
 import ltclinic from "./ltclinic.png";
 import dailyhoroscope from "./dailyhoroscope.png";
 import walk from "./walk.png";
-
-
+import inthebrain from "./inthebrain.svg";
 
 export {
   mainsection,
@@ -72,5 +71,6 @@ export {
   kundli,
   ltclinic,
   dailyhoroscope,
-  walk
+  walk,
+  inthebrain,
 };

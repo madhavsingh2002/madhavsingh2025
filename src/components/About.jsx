@@ -10,26 +10,15 @@ import { fadeIn, textVariant } from "../utils/motion";
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      variants={fadeIn("right", "spring", index * 0.15, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
     >
       <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        options={{ max: 45, scale: 1, speed: 450 }}
+        className='bg-tertiary rounded-[20px] py-5 px-8 min-h-[210px] flex justify-evenly items-center flex-col'
       >
-        <img
-          src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
-        />
-
-        <h3 className='text-white text-[20px] font-bold text-center'>
-          {title}
-        </h3>
+        <img src={icon} alt={title} className='w-16 h-16 object-contain' />
+        <h3 className='text-white text-[19px] font-bold text-center'>{title}</h3>
       </div>
     </motion.div>
   </Tilt>
@@ -45,12 +34,12 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]'
       >
-        I am an experienced Android Developer skilled in Kotlin, Java, and the Android SDK, with a strong grasp of MVVM, Jetpack libraries, and Dependency Injection (Hilt/Dagger). I have a solid background in building scalable apps with REST APIs, Bluetooth integration, Firebase, and Clean Architecture. My work includes developing a clinic app and astrology applications, with a passion for creating reliable, user-centric mobile experiences
+        I am an Android, iOS, and Flutter Developer with 3+ years of experience building scalable mobile applications for healthcare, mobility tracking, astrology, utilities, and AI learning. I work with Kotlin, Java, Dart, Android SDK, Jetpack Compose, Flutter, Kotlin Multiplatform Mobile, Xcode, Firebase, RESTful APIs, BLE integrations, MVVM, and Clean Architecture to ship reliable, user-focused mobile products.
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-16 flex flex-wrap gap-8'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
